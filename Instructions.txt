@@ -1,0 +1,3 @@
+To run the following files you first Start up the Database using mongod 
+then in your terrminal go to the files directory and run nodemon app.js
+must run two instances of localhost with two seperate sign ins.

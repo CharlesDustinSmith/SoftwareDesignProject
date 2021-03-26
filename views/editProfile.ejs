@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+<div class="container mt-5">
+  <h1>Edit Chatter Box Account</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/editProfile" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" value="<%= username %>" required>
+            </div>
+            <div class="form-group">
+              <label for="email">New First Name</label>
+              <input id="firstName" type="text" class="form-control" name="firstName" value="<%= firstName %>" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">New Last Name</label>
+              <input type="text" class="form-control" name="lastName" value="<%= lastName %>" required>
+            </div>
+            <div class="form-group">
+              <label for="email">New Email</label>
+              <input type="email" class="form-control" name="email" value="<%= email %>" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Current Password</label>
+              <input type="password" class="form-control" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="retypePassword">New Password</label>
+                <input id="retypePassword" type="password" class="form-control" name="newPassword" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Edit Profile</button>
+            <a href="/homepage" class="btn btn-dark">Back</a>  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/header') %>
